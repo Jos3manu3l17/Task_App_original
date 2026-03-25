@@ -6,7 +6,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | Nombre | Rol | Usuario de GitHub |
 | :--- | :--- | :--- |
 | [Jose Manuel Carreño] | Líder (Desarollador) | @Jos3manu3l17 |
-| [Nombre del Aprendiz 2] | Desarrollador | `@usuario2` |
+| [Yilber Duvan Garcia Rivero] | Desarrollador | @DuvanGarcia0502 |
 | [Camilo Andres Vanegas Mejia] | Desarrollador | `@Camil0-art` |
 
 ## 2. Canales de Comunicación
