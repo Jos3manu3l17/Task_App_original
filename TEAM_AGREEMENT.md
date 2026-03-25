@@ -7,7 +7,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | :--- | :--- | :--- |
 | [Jose Manuel Carreño] | Líder (Desarollador) | @Jos3manu3l17 |
 | [Nombre del Aprendiz 2] | Desarrollador | `@usuario2` |
-| [Nombre del Aprendiz 3] | Desarrollador | `@usuario3` |
+| [Camilo Andres Vanegas Mejia] | Desarrollador | `@Camil0-art` |
 
 ## 2. Canales de Comunicación
 Para mantener el orden y separar lo profesional de lo personal, usaremos los siguientes canales:
