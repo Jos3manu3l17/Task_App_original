@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Task Manager</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Task App</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Tareas</a>
+      <a href="#">Perfil</a>
+      <a href="#">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="agrear-tarea.html">Agregar tareas</a></li>
+        <li><a href="tarea-completada.html">Tareas completadas</a></li>
+        <li><a href="tarea-pendiente.html">Tareas pendientes</a></li>
+        <li><a href="sin-tarea.html">Sin tareas</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <section class="content">
+      <h2>Resumen de Actividad</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Tareas Totales</h3>
+          <p>24</p>
+        </div>
+        <div class="card">
+          <h3>Pendientes</h3>
+          <p>10</p>
+        </div>
+        <div class="card">
+          <h3>Completadas</h3>
+          <p>14</p>
+        </div>
+      </div>
+
+      <div class="tasks-section">
+        <h2>Últimas tareas</h2>
+
+        <div class="task">
+          <span>Terminar el proyecto de fisica</span>
+          <span class="status pending">Pendiente</span>
+        </div>
+
+        <div class="task">
+          <span>Proyecto de matematicas</span>
+          <span class="status completed">Completado</span>
+        </div>
+
+        <div class="task">
+          <span>Tarea de laboratorio inicial</span>
+          <span class="status pending">Pendiente</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Task Manager | Proyecto SENA ADSO</p>
+  </footer>
+
+</body>
+</html>
