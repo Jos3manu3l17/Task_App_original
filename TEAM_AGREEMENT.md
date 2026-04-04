@@ -5,9 +5,9 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 ## 1. Miembros del Equipo y Roles
 | Nombre | Rol | Usuario de GitHub |
 | :--- | :--- | :--- |
-| [Nombre del Aprendiz 1] | Líder (Arquitecto) | `@usuario1` |
-| [Nombre del Aprendiz 2] | Desarrollador | `@usuario2` |
-| [Nombre del Aprendiz 3] | Desarrollador | `@usuario3` |
+| [Jose Manuel Carreño] | Líder (Desarollador) | @Jos3manu3l17 |
+| [Yilber Duvan Garcia Rivero] | Desarrollador | @DuvanGarcia0502 |
+| [Camilo Andres Vanegas Mejia] | Desarrollador | `@Camil0-art` |
 
 ## 2. Canales de Comunicación
 Para mantener el orden y separar lo profesional de lo personal, usaremos los siguientes canales:
