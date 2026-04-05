@@ -1,0 +1,61 @@
+body {
+  font-family: var(--fuente-principal);
+  background: var(--color-gris);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+}
+
+.task-card {
+  background: var(--color-secundario);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,3,0.09);
+  max-width: 420px;
+  margin: 0 auto;
+  border: 1px solid var(--color-blanco);
+}
+
+.task-card h3 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.status.completed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #33d66fa8; 
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.status.completed::before {
+  content: "✔";
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.btn-agregarTarea {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #33d66fa8;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.btn-agregarTarea:hover {
+    background-color: #92b8fa;
+    color: white;
+    transform: scale(1.05);
+}
