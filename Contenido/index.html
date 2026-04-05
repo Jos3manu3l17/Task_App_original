@@ -1,95 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard | Task Manager</title>
-  <link rel="stylesheet" href="Styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso a Task App</title>
+    <link rel="stylesheet" href="Styles-login.css">
 </head>
 <body>
+    <div class="login" id="login">
+        <h2>Ingreso de Usuarios</h2>
+            <p class="sub">Bienvenido a Task App</p>
 
-  <header class="topbar">
-    <h1>Task App</h1>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Registrate</a>
-      <a href="#">Perfil</a>
-      <a href="#">Cerrar sesión</a>
-    </nav>
-  </header>
+                <form action="dashboard.html" method="get">
+                <label for="usuario">Correo electronico</label>
+                <input type="email" id="usuario" placeholder="Ingresa tu correo" required>
 
-  <main class="layout">
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" placeholder="Ingresa tu contraseña" required>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2>Menú</h2>
-      <ul>
-        <li><a href="agrear-tarea.html">Agregar tareas</a></li>
-        <li><a href="tarea-completada.html">Tareas completadas</a></li>
-        <li><a href="tarea-pendiente.html">Tareas pendientes</a></li>
-        <li><a href="sin-tarea.html">Sin tareas</a></li>
-      </ul>
-    </aside>
-
-    <!-- Contenido principal -->
-    <section class="content">
-      <h2>Resumen de Actividad</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Tareas Totales</h3>
-          <p>24</p>
-        </div>
-        <div class="card">
-          <h3>Pendientes</h3>
-          <p>10</p>
-        </div>
-        <div class="card">
-          <h3>Completadas</h3>
-          <p>14</p>
-        </div>
-      </div>
-
-<div class="tasks-section">
-  <h2>Últimas tareas</h2>
-
-  <div class="task-list">
-
-    <div class="task-card">
-      <h3>Terminar el proyecto de fisica</h3>
-      <p class="status pending">Pendiente</p>
-      <div class="task-actions">
-        <button class="btn complete-btn">Completar</button>
-        <button class="btn delete-btn">Eliminar</button>
-  </div>
-</div>
-
- <div class="task-card">
-      <h3>Proyecto de matematicas</h3>
-      <p class="status completed">Completado</p>
-      <div class="task-actions">
-        <a href="tarea-completada.html"><button class="btn complete-btn">Ver</button></a>
-        <button class="btn delete-btn">Eliminar</button>
-  </div>
-</div>
- <div class="task-card">
-      <h3>Tarea de laboratorio inicial</h3>
-      <p class="status pending">Pendiente</p>
-      <div class="task-actions">
-        <button class="btn complete-btn">Completar</button>
-        <button class="btn delete-btn">Eliminar</button>
-      </div>
+                <button type="submit" class="btn-login">Ingresar</button>
+                <p class="registro">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                <p class="registro"><a href="#portada">← Volver</a></p>
+            </form>
     </div>
-
-  </div>
-</div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Task Manager | Proyecto SENA ADSO</p>
-  </footer>
-
 </body>
 </html>
