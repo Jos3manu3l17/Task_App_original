@@ -1,28 +1,27 @@
-# PROYECTO BASE: [Nombre de la Aplicación] - Software Factory SENA
+# PROYECTO BASE: Task App - Software Factory SENA
 
 **Metodología:** *"Del Requerimiento al Producto"*
 
-Este repositorio constituye la base técnica y administrativa para el desarrollo del proyecto. No es solo un contenedor de código, es una simulación de un entorno profesional donde se aplican estándares de calidad, gestión ágil y flujos de trabajo colaborativos reales.
+Este repositorio constituye la base técnica y administrativa para el desarrollo del proyecto TaskApp. No es solo un contenedor de código, es una simulación de un entorno profesional donde se aplican estándares de calidad, gestión ágil y flujos de trabajo colaborativos reales mediante GitHub.
 
 ---
 
 ## INTRODUCCIÓN Y PROPÓSITO
 
-El objetivo de este proyecto es desarrollar una solución tecnológica funcional, priorizando:
+El objetivo de este proyecto es desarrollar una aplicación web de gestión de tareas, priorizando:
 
 - Arquitectura limpia  
-- Código escalable  
-- Trazabilidad total  
+- Código organizado y escalable  
+- Trazabilidad total del trabajo colaborativo  
 
 ### El "Por qué" (Justificación)
 
-Dominar el ciclo de vida del software es tan importante como programar. Esta metodología alinea las habilidades técnicas con las exigencias de la industria, garantizando que cada línea de código tenga un propósito claro y demostrable.
-
+Dominar el ciclo de vida del software es tan importante como programar. Esta metodología alinea las habilidades técnicas con las exigencias de la industria, garantizando que cada cambio realizado tenga un propósito claro y verificable mediante Issues, Pull Requests, Milestones y Kanban.
 ---
 
 ## CENTRO DE DOCUMENTACIÓN (WIKI DEL PROYECTO)
 
-Antes de escribir la primera línea de código o ejecutar un comando, es obligatorio revisar las guías de trabajo.
+Antes de escribir código, se revisaron las guías ubicadas en la carpeta docs/ del repositorio:
 
 ### Nivel 1. Sistema  
 **Ubicación:** `docs/01-guia-sistema/`  
@@ -30,7 +29,7 @@ Antes de escribir la primera línea de código o ejecutar un comando, es obligat
 
 ### Nivel 2. Metodología  
 **Ubicación:** `docs/02-guia-metodologia/`  
-- Reglas para reportar tareas y solicitar revisiones (PR)  
+- Reglas para pull request 
 
 ### Nivel 3. Formatos  
 **Ubicación:** `docs/03-formatos-maestros/`  
@@ -42,21 +41,26 @@ Antes de escribir la primera línea de código o ejecutar un comando, es obligat
 
 ### Líder (Arquitecto)
 
-- **Responsabilidad:** Integridad del repositorio y control de calidad  
+--- Jose Manuel Carreño Puerta 
+
+- **Responsable de:** 
 - **Tareas en GitHub:**
   - Protección de ramas  
   - Gestión de Milestones  
-  - Aprobación de Pull Requests  
+  - Revisión y aprobación de Pull Requests  
 
 ---
 
 ### Desarrollador (Albañil)
 
-- **Responsabilidad:** Construcción de módulos y lógica  
+--- Camilo Andres Vanegas 
+--- Yilver Duvan Garcia
+
+- **Responsables de:** Construcción de módulos y lógica  
 - **Tareas en GitHub:**
   - Desarrollo en ramas `feat/`  
   - Reporte de avances  
-  - Solicitud de revisión técnica  
+  - Solicitud de revisión por PR  
 
 ---
 
@@ -91,20 +95,64 @@ Mantenemos una organización modular para facilitar el mantenimiento:
 
 ```
 /
-├── .github/              # Motor de plantillas (Issues y Pull Requests)
-├── docs/                 # Guías metodológicas y reportes técnicos
-├── public/               # Recursos estáticos (imágenes, iconos)
-├── src/                  # Código fuente principal
-│   ├── assets/           # Estilos globales y multimedia
-│   ├── components/       # Piezas de interfaz reutilizables (UI)
-│   ├── services/         # Lógica de consumo de datos o APIs
-│   ├── views/            # Secciones o páginas principales
-│   └── main.js           # Punto de entrada de la aplicación
-├── .gitignore            # Archivos que Git debe ignorar
-├── package.json          # Dependencias y scripts del proyecto
-├── README.md             # Manual principal del repositorio
-└── TEAM_AGREEMENT.md     # Acuerdo y normas de convivencia del equipo
+.
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
+│   └── pull_request_template.md
+├── Contenido/
+│   ├── agrear-tarea.html
+│   ├── agregarTarea.css
+│   ├── dashboard.html
+│   ├── index.html
+│   ├── Logo de Task App con lista de verificación.p...
+│   ├── registro.css
+│   ├── registro.html
+│   ├── sin-tarea.html
+│   ├── Styles-login.css
+│   ├── Styles.css
+│   ├── tarea-completada.html
+│   └── tarea-pendiente.html
+├── docs/
+│   ├── 01-guia-sistema/
+│   │   ├── blindaje-ramas.md
+│   │   ├── creacion_milestones.md
+│   │   ├── creacion_issues.md
+│   │   └── tablero-kanban.md
+│   ├── 02-guia-metodologia/
+│   │   ├── conventional-commits.md
+│   │   ├── gitflow.md
+│   │   ├── GUIA_ISSUES.md
+│   │   └── GUIA_PULL_REQUEST.md
+│   └── 03-formatos-maestros/
+│       └── ISSUE_TEMPLATE/
+│           ├── bug_report.md
+│           ├── feature_request.md
+│           └── pull_request_template.md
+                README.md
+                TEAM_AGREEMENT.md
+
 ```
+
+## VISTAS DE LA APLICACION
+
+La aplicación cuenta con múltiples vistas HTML como:
+
+Registro de usuario
+Inicio de sesión (Login)
+Lista de tareas
+Crear tarea
+
+## Durante el proyecto se aplicó el siguiente flujo
+
+Sincronización con develop
+Creación de rama feat/nombre-tarea
+Desarrollo aislado
+Pull Request con Closes #ID
+Revisión obligatoria por el líder
+Merge a develop
+Release final de develop hacia main
 
 ## METODOLOGÍA DE TRABAJO (GITFLOW PROFESIONAL)
 
@@ -159,9 +207,10 @@ Este flujo protege la estabilidad del código base. Si tu código falla, solo fa
 
 Para garantizar la integridad del producto, el repositorio cuenta con candados de seguridad:
 
-- **Rama `main`:**
-  - Representa el estado de producción  
-  - Solo recibe código desde `develop` cuando un Milestone (Hito) está al 100%  
+main representa producción
+develop integración del equipo
+Prohibidos commits directos
+Revisión obligatoria por PR
 
 - **Restricción de Merge:**
   - El botón de integración está bloqueado para los desarrolladores  
@@ -171,19 +220,12 @@ Para garantizar la integridad del producto, el repositorio cuenta con candados d
 
 ## ESTÁNDARES DE CALIDAD (DEFINITION OF DONE)
 
-Antes de que el Líder apruebe un Pull Request, el desarrollador debe garantizar:
+Antes de aprobar un PR se verificaba:
 
-- **Limpieza:**  
-  Cero `console.log`, variables sin uso o código comentado (*"por si acaso"*)  
-
-- **Responsive:**  
-  El diseño se adapta sin romperse a pantallas móviles  
-
-- **Sincronización:**  
-  La rama está actualizada y sin conflictos de merge  
-
-- **Automatización:**  
-  La descripción del PR incluye `Closes #ID` para cerrar la tarea  
+Diseño responsive
+Código limpio sin pruebas innecesarias
+Rama sincronizada sin conflictos
+Issue vinculado mediante Closes #ID 
 
 ### El "Por qué"
 
@@ -205,11 +247,30 @@ En la industria, el software que no está publicado no existe. Esto vincula el r
 
 ---
 
+## CÓMO EJECUTAR EL PROYECTO
+
+Clonar el repositorio:
+git clone URL_DEL_REPO
+
+Abrir la carpeta:
+Abrir la carpeta
+
+cd Task_App_original
+
+
+## CRITERIOS DE ENTREGA CUMPLIDOS
+
+Milestones al 100%
+Issues cerradas y vinculadas a PR
+Proyecto funcional en la rama main
+Flujo Git profesional aplicado correctamente
+
+
 ## DIRECCIÓN DEL PROYECTO
 
-- **Instructor:** [Tu Nombre Aquí]  
+- **Instructor:** Jhon Becerra
 - **Institución:** Servicio Nacional de Aprendizaje (SENA)  
-- **Centro:** [Nombre de tu Centro de Formación]  
+- **Centro:** Centro cndustrial de mantenimineto integral   
 - **Programa:** Análisis y Desarrollo de Software  
 
 ---
