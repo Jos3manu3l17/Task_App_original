@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalle de Tarea - Task App</title>
+  <link rel="stylesheet" href="detalle-tarea.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">Task App</div>
+    <ul class="navbar-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="registro.html">Regístrate</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="index.html">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="agrear-tarea.html">Agregar tareas</a></li>
+        <li><a href="tarea-completada.html">Tareas completadas</a></li>
+        <li><a href="tarea-pendiente.html">Tareas pendientes</a></li>
+        <li><a href="sin-tarea.html">Sin tareas</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+
+      <!-- Botón volver -->
+      <div class="back-btn-container">
+        <a href="dashboard.html" class="btn-volver">← Volver al Dashboard</a>
+      </div>
+
+      <section class="detalle-card">
+
+        <div class="detalle-header">
+          <h2>Terminar el proyecto de física</h2>
+          <span class="badge pendiente">Pendiente</span>
+        </div>
+
+        <div class="detalle-body">
+
+          <div class="detalle-campo">
+            <span class="campo-label">Descripción</span>
+            <p>Completar el informe final del proyecto de física sobre mecánica cuántica,
+            incluyendo todos los cálculos, gráficas y conclusiones requeridas por el docente.</p>
+          </div>
+
+          <div class="detalle-grid">
+            <div class="detalle-campo">
+              <span class="campo-label">Fecha de creación</span>
+              <p>10 de abril, 2026</p>
+            </div>
+            <div class="detalle-campo">
+              <span class="campo-label">Fecha límite</span>
+              <p>20 de abril, 2026</p>
+            </div>
+            <div class="detalle-campo">
+              <span class="campo-label">Asignado a</span>
+              <p>Jose Carreño</p>
+            </div>
+            <div class="detalle-campo">
+              <span class="campo-label">Categoría</span>
+              <p>Académico</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="detalle-acciones">
+          <a href="#" class="btn-completar">✔ Completar tarea</a>
+          <a href="#" class="btn-eliminar">✖ Eliminar tarea</a>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Task Manager | Proyecto SENA ADSO</p>
+  </footer>
+
+</body>
+</html>

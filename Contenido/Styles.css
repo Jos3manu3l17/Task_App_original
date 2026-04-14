@@ -250,3 +250,13 @@
     background: #f87171;
     color: var(--color-blanco);
 }
+
+.btn-ver-detalle {
+    background: var(--color-exito);
+    color: var(--color-Negro);
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
