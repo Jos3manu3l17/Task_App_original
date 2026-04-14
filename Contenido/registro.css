@@ -53,7 +53,7 @@ body{
     padding: var(--espaciado-md);
     border-radius: var(--radio);
     background: var(--color-secundario);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 0px rgba(0,0,0,0.1);
 }
 
 .formulario h2{
@@ -64,8 +64,8 @@ body{
 .formulario input{
     margin: 8px 0;
     padding: var(--espaciado-sm);
-    border: var(--radio 4px #002c79);
-    border-radius: px;
+    border: var(--radio #002c79);
+    border-radius: var(--radio );
 }
 
 .formulario button{
@@ -74,17 +74,16 @@ body{
     border: none;
     background: var(--color-azul);
     color: var(--color-blanco);
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .formulario button:hover{
-    background: var(--color-terciario);
+    background: #17449e;
+  box-shadow: 4 4px 10px rgba(3,0,3,0.2);
 }
 
-.formulario:active {
-    transform: scale(2.0);
-}
+
 
 .registro{
     padding: var(--espaciado-sm);
